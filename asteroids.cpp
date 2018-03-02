@@ -733,7 +733,7 @@ void physics()
 			g.mouseThrustOn = false;
 	}
 }
-
+extern void drawBox(int,int);
 void render()
 {
 	Rect r;
@@ -747,6 +747,7 @@ void render()
 	ggprint8b(&r, 16, 0x00ffff00, "n asteroids: %i", g.nasteroids);
 	ggprint8b(&r, 16, 0x00ffff00, "n asteroids destroyed: ");
 	showName();
+	drawBox(gl.xres/2,gl.yres/2);
 	//
 	//-------------
 	//Draw the ship
