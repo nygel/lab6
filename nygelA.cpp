@@ -1,6 +1,7 @@
 //nygelA.cpp
 //by Nygel Aton
 //
+//make a pull request
 #include "fonts.h"
 #include <GL/glx.h>
 void showName(){
@@ -32,13 +33,13 @@ void drawBox(int x, int y){
                 glVertex2i(100,	100);
                 glVertex2i(0,	100);
         glEnd();
-        Rect r; 
-        r.bot = 50;
-        r.left = 50;
+        Rect c; 
+        c.bot = 50;
+        c.left = 50;
 	//center is a flag for some fonts set it to 
 	//1 = true(center text)
 	//0 = false(no center)
-        r.center = 1;
+        c.center = 1;
         ggprint8b(&r, 16, 0x0aff0200, "Nygel :D!!!!");
         glPopMatrix();
 	
